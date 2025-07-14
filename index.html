@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CR Attendance App</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="main-heading">3/4 CSE C-Section Attendance</h1>
+        <p id="currentDate"></p>
+    </header>
+
+    <main>
+        <div id="passwordOverlay" class="password-overlay">
+            <div class="password-prompt">
+                <h2>Enter Password to Access</h2>
+                <input type="password" id="passwordInput" placeholder="Password">
+                <button id="loginButton">Login</button>
+                <p id="errorMessage" class="error-message"></p>
+            </div>
+        </div>
+
+        <section id="attendanceApp" class="attendance-list-container" style="display: none;">
+            <h2>Mark Attendance</h2>
+            <div id="studentList">
+            </div>
+            <button id="submitAttendanceBtn" class="submit-button">Submit Attendance</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; BY GaneshPeddinti!!!</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
